@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_connosieur_go_pipeline_sample_ci_1759618769474-pr-trigger-input-set
+  identifier: Build_connosieur_go_pipeline_sample_ci_1759618769474prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: demo
+  pipeline:
+    identifier: Build_connosieur_go_pipeline_sample_ci_1759618769474
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>

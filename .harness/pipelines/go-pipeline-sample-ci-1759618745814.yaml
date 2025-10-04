@@ -57,7 +57,7 @@ pipeline:
                   timeout: ""
                   type: BuildAndPushDockerRegistry
           platform:
-            os: Linux
+            os: Windows
             arch: Amd64
           runtime:
             type: Cloud

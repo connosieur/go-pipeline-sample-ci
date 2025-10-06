@@ -51,9 +51,9 @@ pipeline:
                   spec:
                     caching: true
                     connectorRef: <+input>
-                    repo: hello/world
-                    tags:
-                      - latest
+                    repo: ""
+                    tags: []
+                    push: false
                   timeout: ""
                   type: BuildAndPushDockerRegistry
           platform:

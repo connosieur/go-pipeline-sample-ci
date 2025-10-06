@@ -48,14 +48,15 @@ pipeline:
               - step:
                   identifier: dockerbuild
                   name: docker_build
-                  spec:
-                    caching: true
-                    connectorRef: <+input>
-                    repo: ""
-                    tags: []
-                    push: false
-                  timeout: ""
                   type: BuildAndPushDockerRegistry
+                  spec:
+                    connectorRef: <+input>
+                    caching: true
+                    repo: dummy/repo
+                    tags:
+                      - latest
+                    push: false
+                    timeout: ""
           platform:
             os: Linux
             arch: Amd64
